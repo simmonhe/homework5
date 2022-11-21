@@ -1,15 +1,10 @@
-// Add js here.
-//get the video element and store it in a variable
 var vid = document.getElementById("videoplayer");
 
-//Initialize the video variable when loading page
 vid.preload = "auto";
-//turn off autoplay
 vid.autoplay = false;
-//turn off looping when video is finsihed
 vid.loop = false;
+vid.load();
 
-//get all the control elements (buttons and slider) and store them into variables
 var play_btn = document.getElementById("play");
 var pause_btn = document.getElementById("pause");
 var slower_btn = document.getElementById("slower");
